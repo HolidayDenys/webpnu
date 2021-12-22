@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Персональна Сторінка Минки Дениса Володимировича </h1>
+    <p>Я Українець.</p>
+    <p>Дата народження 26.01.2000</p>
+    <p>Усе життя я жив в Івано-Франківську</p>
+    <p>На данний момент (2021 рік) навчаюсь в ПНУ ім.Василя Стефаника</p>
+    <p>Неодружений без кредитів</p>
+    <ul>
+        <li>
+            <a id="text" onclick="Color()" href="biography.html">Автобіографія</a>
+        </li>
+        <li>
+            <a id="text" onclick="Color()" href="novadays.html">Сьогодення</a>
+        </li>
+        <li>
+            <a id="text" onclick="Color()" href="friends.html">Друзі</a>
+        </li>
+        <li>
+            <a id="text" onclick="Color()" href="gallery.html">Галерея</a>
+        </li>
+    </ul>
+
+    <script>
+        
+
+        function Color() {
+            document.getElementById("text").style.backgroundColor =function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            } 
+        }
+        
+    </script>
+</body>
+
+</html>
